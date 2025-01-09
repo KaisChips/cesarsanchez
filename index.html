@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><a id="Inicio">BIM Portfolio</a></title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Cargar la librería web-ifc-viewer -->
+    <script src="https://cdn.jsdelivr.net/npm/web-ifc-viewer@latest"></script>
+    <!-- Cargar el archivo ifc.js -->
+    <script src="RESA_G4_M3D_EST_ZZZ_ZZZ.ifc.js" defer></script> <!-- Este es el archivo que contiene el modelo IFC -->
+    <script src="scripts.js" defer></script> <!-- Tu archivo JavaScript para manejar la carga -->
+</head>
+<body>
+    <header>
+        <div class="logo">BIM Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Welcome</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>A brief description of the project.</p>
+            <div id="ifc-container" style="width: 100%; height: 500px; border: 1px solid #ddd;"></div>
+        </div>
+    </section>
+
+    <section id="upload">
+        <h2>Upload and View Your IFC File</h2>
+        <input type="file" id="ifc-upload" accept=".ifc" />
+        <div id="ifc-container" style="width: 100%; height: 500px; border: 1px solid #ddd;"></div>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>www.linkedin.com/in/césar-sánchez-jurado-7b0746193</p>
+            <p>Email: cesarsanju@gmail.com</p>
+            <p>Phone: +34 684 305 108</p>
+        </section>
+        <p>&copy; 2025 BIM Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
